@@ -7,7 +7,7 @@ public class Customer {
 		
 		BikeBuilder bikeBuilder = new RoadBikeBuilder(); //Road, Mountain zmiana konkretnego budowniczego w zaleznosci od klienta
 		BikeDirector bikeDirector = new BikeDirector(bikeBuilder);
-		bikeDirector.makeCar();
+		bikeDirector.makeBike();
 		
 		Bike bike = bikeDirector.getBike();
 		System.out.println(bike);
